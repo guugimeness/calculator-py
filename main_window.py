@@ -8,17 +8,16 @@ class MainWindow(QMainWindow):
         self.setWindowTitle('Calculator')
         
         # Central Widget
-        self.central_w = QWidget()
-        self.setCentralWidget(self.central_w)
+        self.cWidget = QWidget()
+        self.setCentralWidget(self.cWidget)
         
         # Layout
-        self.v_layout = QVBoxLayout()
-        self.central_w.setLayout(self.v_layout)
+        self.vLayout = QVBoxLayout()
+        self.cWidget.setLayout(self.vLayout)
 
     def adjustFixedSize(self):
         self.adjustSize()
         self.setFixedSize(self.width(), self.height())
         
-    def addWidgetVLayout(self, widget: QWidget):
-        self.v_layout.addWidget(widget)
-        self.adjustFixedSize()
+    def addVLayout(self, widget: QWidget):
+        self.vLayout.addWidget(widget)
