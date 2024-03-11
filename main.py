@@ -1,11 +1,9 @@
 import sys
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
+from widgets import MainWindow, Info, Display, Button, ButtonsGrid
 from styles import setupTheme
-from main_window import MainWindow
-from display import Display
 from variables import WINDOW_ICON_PATH
-from info import Info
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
@@ -21,12 +19,18 @@ if __name__ == '__main__':
         
     # Info
     info = Info('20.0 ^ 2 = 400.0')
-    window.addVLayout(info)
+    window.addWidgetToVLayout(info)
     
     # Display
     display = Display()
     #display.setPlaceholderText('Digite a conta')
-    window.addVLayout(display)
+    window.addWidgetToVLayout(display)
+    
+    # Grid
+    buttonsGrid = ButtonsGrid(display)
+    window.addLayoutToVLayout(buttonsGrid)
+    
+    buttonsGrid._makeGrid()
 
     window.adjustFixedSize()
     window.show()
