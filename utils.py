@@ -15,4 +15,4 @@ def isValidNumber(string: str):
     return valid
 
 def isEmpyt(string: str):
-    return string == ''
+    return string == '' or string == '-'
