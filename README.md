@@ -6,6 +6,10 @@ Calculator project from [Luiz Otávio Miranda's Python course](https://www.udemy
 
 ## Visuals
 
+<p align="center">
+  <img src="https://github.com/guugimeness/calculator-py/blob/ba5bca1bb1619a9472b1f805a498bbdf599b0234/assets/calculator.png" alt="Image">
+</p>
+
 ## Keyboard Shortcuts
 
 * Enter: Enter, Return and '='
