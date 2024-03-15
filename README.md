@@ -12,10 +12,10 @@ Calculator project from [Luiz Otávio Miranda's Python course](https://www.udemy
 
 ## Keyboard Shortcuts
 
-* Enter: Enter, Return and '='
-* Clear: ESC and 'C'
-* Delete: Backspace, Delete and 'D'
-* Pow: 'P'
+* **Enter**: Enter, Return and '='
+* **Clear**: ESC and 'C'
+* **Delete**: Backspace, Delete and 'D'
+* **Pow**: 'P'
 
 ## Installation
 
